@@ -1,0 +1,121 @@
+{
+  "extensionDescription": {
+    "message": "Route per-window audio in Edge/Chromium with setSinkId and tabCapture/offscreen playback."
+  },
+  "popupTitle": {
+    "message": "Audio output for this window"
+  },
+  "windowLabel": {
+    "message": "Window $WINDOW_ID$",
+    "placeholders": {
+      "window_id": {
+        "content": "$1"
+      }
+    }
+  },
+  "audioControlsLabel": {
+    "message": "Audio output controls"
+  },
+  "outputDeviceLabel": {
+    "message": "Output device"
+  },
+  "windowsDefaultOption": {
+    "message": "Windows default"
+  },
+  "volumeLabel": {
+    "message": "Volume"
+  },
+  "unnamedAudioOutput": {
+    "message": "Audio output $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "previouslySelectedOutput": {
+    "message": "Previously selected output"
+  },
+  "detectingOutputs": {
+    "message": "Detecting outputs..."
+  },
+  "noRealOutputs": {
+    "message": "No real output detected."
+  },
+  "outputsDetected": {
+    "message": "$COUNT$ output(s) detected.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "outputPermissionHint": {
+    "message": "Edge has not exposed the real outputs yet. Click the device menu; if the browser picker appears, choose the desired output to unlock the list."
+  },
+  "outputUnavailableHint": {
+    "message": "Edge has not exposed the real outputs to this extension yet."
+  },
+  "openingOutputPicker": {
+    "message": "Opening output picker..."
+  },
+  "permissionDenied": {
+    "message": "Permission denied by Edge."
+  },
+  "cannotUnlockOutputs": {
+    "message": "Could not unlock audio outputs."
+  },
+  "applying": {
+    "message": "Applying..."
+  },
+  "activeTabRoutingStatus": {
+    "message": "$LABEL$: routing active tab, volume $PERCENT$%.",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "percent": {
+        "content": "$2"
+      }
+    }
+  },
+  "tabCaptureFailedStatus": {
+    "message": "$LABEL$: tab capture failed ($ERROR$).",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "error": {
+        "content": "$2"
+      }
+    }
+  },
+  "partiallyAppliedStatus": {
+    "message": "$LABEL$: partially applied, volume $PERCENT$%.",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "percent": {
+        "content": "$2"
+      }
+    }
+  },
+  "volumeStatus": {
+    "message": "$LABEL$: volume $PERCENT$%.",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "percent": {
+        "content": "$2"
+      }
+    }
+  },
+  "genericApplyError": {
+    "message": "Error applying settings."
+  },
+  "genericStartupError": {
+    "message": "Could not start the popup."
+  }
+}

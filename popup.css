@@ -1,0 +1,153 @@
+:root {
+  color-scheme: dark;
+  --bg: #111418;
+  --panel: #181d24;
+  --text: #f2f5f8;
+  --muted: #aab4c0;
+  --line: #303846;
+  --accent: #35c6f4;
+  --success: #5fe09b;
+  --warning: #ffd166;
+  --danger: #ff7b7b;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  min-height: 250px;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  padding: 18px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.mark {
+  display: grid;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(53, 198, 244, 0.38);
+  border-radius: 10px;
+  background: linear-gradient(145deg, #202a35, #151a21);
+  box-shadow: inset 0 0 18px rgba(53, 198, 244, 0.12);
+}
+
+.mark-dot {
+  width: 16px;
+  height: 16px;
+  border: 4px solid var(--accent);
+  border-left-color: transparent;
+  border-radius: 999px;
+  box-shadow: 0 0 14px rgba(53, 198, 244, 0.55);
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#windowLabel {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.controls {
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.field-row strong {
+  color: var(--text);
+  font-size: 12px;
+}
+
+select {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 11px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+  outline: none;
+}
+
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(53, 198, 244, 0.16);
+}
+
+select:disabled,
+input[type="range"]:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.warning {
+  padding: 9px 10px;
+  border: 1px solid rgba(255, 209, 102, 0.35);
+  border-radius: 8px;
+  background: rgba(255, 209, 102, 0.08);
+  color: var(--warning);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.status {
+  min-height: 18px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.status.success {
+  color: var(--success);
+}
+
+.status.error {
+  color: var(--danger);
+}

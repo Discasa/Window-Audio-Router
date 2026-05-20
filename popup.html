@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Audio Router</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="mark" aria-hidden="true">
+          <span class="mark-dot"></span>
+        </div>
+        <div>
+          <h1 data-i18n="popupTitle">Audio output for this window</h1>
+          <p id="windowLabel"></p>
+        </div>
+      </header>
+
+      <section class="controls" data-i18n-aria-label="audioControlsLabel" aria-label="Audio output controls">
+        <label class="field" for="audioOutputSelect">
+          <span data-i18n="outputDeviceLabel">Output device</span>
+          <select id="audioOutputSelect">
+            <option value="" data-i18n="windowsDefaultOption">Windows default</option>
+          </select>
+        </label>
+
+        <label class="field" for="volumeRange">
+          <span class="field-row">
+            <span data-i18n="volumeLabel">Volume</span>
+            <strong id="volumeValue">100%</strong>
+          </span>
+          <input id="volumeRange" type="range" min="0" max="100" step="1" value="100">
+        </label>
+
+        <p id="permissionWarning" class="warning" hidden></p>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

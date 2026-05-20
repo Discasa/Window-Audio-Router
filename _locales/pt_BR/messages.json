@@ -1,0 +1,121 @@
+{
+  "extensionDescription": {
+    "message": "Roteia audio por janela no Edge/Chromium usando setSinkId e tabCapture/offscreen."
+  },
+  "popupTitle": {
+    "message": "Saida de audio desta janela"
+  },
+  "windowLabel": {
+    "message": "Janela $WINDOW_ID$",
+    "placeholders": {
+      "window_id": {
+        "content": "$1"
+      }
+    }
+  },
+  "audioControlsLabel": {
+    "message": "Controle de saida de audio"
+  },
+  "outputDeviceLabel": {
+    "message": "Dispositivo de saida"
+  },
+  "windowsDefaultOption": {
+    "message": "Padrao do Windows"
+  },
+  "volumeLabel": {
+    "message": "Volume"
+  },
+  "unnamedAudioOutput": {
+    "message": "Saida de audio $INDEX$",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "previouslySelectedOutput": {
+    "message": "Saida selecionada anteriormente"
+  },
+  "detectingOutputs": {
+    "message": "Detectando saidas..."
+  },
+  "noRealOutputs": {
+    "message": "Nenhuma saida real detectada."
+  },
+  "outputsDetected": {
+    "message": "$COUNT$ saida(s) detectada(s).",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "outputPermissionHint": {
+    "message": "O Edge ainda nao liberou as saidas reais. Clique no menu de dispositivo; se o seletor do navegador aparecer, escolha a saida desejada para liberar a lista."
+  },
+  "outputUnavailableHint": {
+    "message": "O Edge ainda nao liberou as saidas reais para esta extensao."
+  },
+  "openingOutputPicker": {
+    "message": "Abrindo seletor de saida..."
+  },
+  "permissionDenied": {
+    "message": "Permissao negada pelo Edge."
+  },
+  "cannotUnlockOutputs": {
+    "message": "Nao foi possivel liberar as saidas."
+  },
+  "applying": {
+    "message": "Aplicando..."
+  },
+  "activeTabRoutingStatus": {
+    "message": "$LABEL$: roteando aba ativa, volume $PERCENT$%.",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "percent": {
+        "content": "$2"
+      }
+    }
+  },
+  "tabCaptureFailedStatus": {
+    "message": "$LABEL$: falha na captura da aba ($ERROR$).",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "error": {
+        "content": "$2"
+      }
+    }
+  },
+  "partiallyAppliedStatus": {
+    "message": "$LABEL$: aplicado parcialmente, volume $PERCENT$%.",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "percent": {
+        "content": "$2"
+      }
+    }
+  },
+  "volumeStatus": {
+    "message": "$LABEL$: volume $PERCENT$%.",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "percent": {
+        "content": "$2"
+      }
+    }
+  },
+  "genericApplyError": {
+    "message": "Erro ao aplicar."
+  },
+  "genericStartupError": {
+    "message": "Nao foi possivel iniciar o popup."
+  }
+}
