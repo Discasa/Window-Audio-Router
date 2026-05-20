@@ -3,7 +3,7 @@
     "message": "Roteia áudio por janela no Edge/Chromium usando setSinkId e tabCapture/offscreen."
   },
   "popupTitle": {
-    "message": "Saída de áudio desta janela"
+    "message": "Window Audio Router"
   },
   "audioControlsLabel": {
     "message": "Controle de saída de áudio"

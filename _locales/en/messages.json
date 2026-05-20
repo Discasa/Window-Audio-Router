@@ -3,7 +3,7 @@
     "message": "Route per-window audio in Edge/Chromium with setSinkId and tabCapture/offscreen playback."
   },
   "popupTitle": {
-    "message": "Audio output for this window"
+    "message": "Window Audio Router"
   },
   "audioControlsLabel": {
     "message": "Audio output controls"

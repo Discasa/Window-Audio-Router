@@ -135,8 +135,8 @@ function setVolumeControl(volume) {
 }
 
 function setStatus(message, type = "") {
-  elements.status.textContent = message;
-  elements.status.className = `status${type ? ` ${type}` : ""}`;
+  elements.status.textContent = "";
+  elements.status.className = "status";
 }
 
 function setWarning(message) {

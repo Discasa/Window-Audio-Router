@@ -154,11 +154,3 @@ input[type="range"] {
   font-size: 12px;
   line-height: 1.35;
 }
-
-.status.success {
-  color: var(--success);
-}
-
-.status.error {
-  color: var(--danger);
-}
