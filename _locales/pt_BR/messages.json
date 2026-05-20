@@ -1,32 +1,24 @@
 {
   "extensionDescription": {
-    "message": "Roteia audio por janela no Edge/Chromium usando setSinkId e tabCapture/offscreen."
+    "message": "Roteia áudio por janela no Edge/Chromium usando setSinkId e tabCapture/offscreen."
   },
   "popupTitle": {
-    "message": "Saida de audio desta janela"
-  },
-  "windowLabel": {
-    "message": "Janela $WINDOW_ID$",
-    "placeholders": {
-      "window_id": {
-        "content": "$1"
-      }
-    }
+    "message": "Saída de áudio desta janela"
   },
   "audioControlsLabel": {
-    "message": "Controle de saida de audio"
+    "message": "Controle de saída de áudio"
   },
   "outputDeviceLabel": {
-    "message": "Dispositivo de saida"
+    "message": "Dispositivo de saída"
   },
   "windowsDefaultOption": {
-    "message": "Padrao do Windows"
+    "message": "Padrão do Windows"
   },
   "volumeLabel": {
     "message": "Volume"
   },
   "unnamedAudioOutput": {
-    "message": "Saida de audio $INDEX$",
+    "message": "Saída de áudio $INDEX$",
     "placeholders": {
       "index": {
         "content": "$1"
@@ -34,16 +26,16 @@
     }
   },
   "previouslySelectedOutput": {
-    "message": "Saida selecionada anteriormente"
+    "message": "Saída selecionada anteriormente"
   },
   "detectingOutputs": {
-    "message": "Detectando saidas..."
+    "message": "Detectando saídas..."
   },
   "noRealOutputs": {
-    "message": "Nenhuma saida real detectada."
+    "message": "Nenhuma saída real detectada."
   },
   "outputsDetected": {
-    "message": "$COUNT$ saida(s) detectada(s).",
+    "message": "$COUNT$ saída(s) detectada(s).",
     "placeholders": {
       "count": {
         "content": "$1"
@@ -51,19 +43,19 @@
     }
   },
   "outputPermissionHint": {
-    "message": "O Edge ainda nao liberou as saidas reais. Clique no menu de dispositivo; se o seletor do navegador aparecer, escolha a saida desejada para liberar a lista."
+    "message": "O Edge ainda não liberou as saídas reais. Clique no menu de dispositivo; se o seletor do navegador aparecer, escolha a saída desejada para liberar a lista."
   },
   "outputUnavailableHint": {
-    "message": "O Edge ainda nao liberou as saidas reais para esta extensao."
+    "message": "O Edge ainda não liberou as saídas reais para esta extensão."
   },
   "openingOutputPicker": {
-    "message": "Abrindo seletor de saida..."
+    "message": "Abrindo seletor de saída..."
   },
   "permissionDenied": {
-    "message": "Permissao negada pelo Edge."
+    "message": "Permissão negada pelo Edge."
   },
   "cannotUnlockOutputs": {
-    "message": "Nao foi possivel liberar as saidas."
+    "message": "Não foi possível liberar as saídas."
   },
   "applying": {
     "message": "Aplicando..."
@@ -116,6 +108,6 @@
     "message": "Erro ao aplicar."
   },
   "genericStartupError": {
-    "message": "Nao foi possivel iniciar o popup."
+    "message": "Não foi possível iniciar o popup."
   }
 }

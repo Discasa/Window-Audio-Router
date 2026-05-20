@@ -1,14 +1,17 @@
 :root {
   color-scheme: dark;
-  --bg: #111418;
-  --panel: #181d24;
-  --text: #f2f5f8;
-  --muted: #aab4c0;
-  --line: #303846;
-  --accent: #35c6f4;
-  --success: #5fe09b;
-  --warning: #ffd166;
-  --danger: #ff7b7b;
+  --bg: #1f1f1f;
+  --surface: #252525;
+  --field: #2b2b2b;
+  --field-hover: #303030;
+  --text: #f3f3f3;
+  --muted: #b8b8b8;
+  --line: #3f3f3f;
+  --accent: #c6c6c6;
+  --accent-strong: #e2e2e2;
+  --success: #d6d6d6;
+  --warning: #d4d4d4;
+  --danger: #f0a7a7;
   font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -16,16 +19,27 @@
   box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  background: transparent;
+}
+
 body {
   width: 340px;
-  min-height: 250px;
+  min-height: 238px;
   margin: 0;
+  overflow: hidden;
+  border-radius: 16px;
   background: var(--bg);
   color: var(--text);
 }
 
 .app {
+  min-height: 238px;
   padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--bg);
 }
 
 .header {
@@ -41,23 +55,21 @@ body {
   width: 42px;
   height: 42px;
   place-items: center;
-  border: 1px solid rgba(53, 198, 244, 0.38);
-  border-radius: 10px;
-  background: linear-gradient(145deg, #202a35, #151a21);
-  box-shadow: inset 0 0 18px rgba(53, 198, 244, 0.12);
+  border: 1px solid #4a4a4a;
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
-.mark-dot {
-  width: 16px;
-  height: 16px;
-  border: 4px solid var(--accent);
-  border-left-color: transparent;
-  border-radius: 999px;
-  box-shadow: 0 0 14px rgba(53, 198, 244, 0.55);
+.app-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
 }
 
 h1 {
-  margin: 0 0 4px;
+  margin: 0;
   font-size: 16px;
   font-weight: 650;
   line-height: 1.25;
@@ -66,12 +78,6 @@ h1 {
 
 p {
   margin: 0;
-}
-
-#windowLabel {
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.35;
 }
 
 .controls {
@@ -94,7 +100,7 @@ p {
 }
 
 .field-row strong {
-  color: var(--text);
+  color: var(--accent-strong);
   font-size: 12px;
 }
 
@@ -103,16 +109,20 @@ select {
   min-height: 40px;
   padding: 0 11px;
   border: 1px solid var(--line);
-  border-radius: 9px;
-  background: var(--panel);
+  border-radius: 10px;
+  background: var(--field);
   color: var(--text);
   font: inherit;
   outline: none;
 }
 
+select:hover {
+  background: var(--field-hover);
+}
+
 select:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(53, 198, 244, 0.16);
+  border-color: #6a6a6a;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
 }
 
 select:disabled,
@@ -128,9 +138,9 @@ input[type="range"] {
 
 .warning {
   padding: 9px 10px;
-  border: 1px solid rgba(255, 209, 102, 0.35);
-  border-radius: 8px;
-  background: rgba(255, 209, 102, 0.08);
+  border: 1px solid #555;
+  border-radius: 10px;
+  background: #282828;
   color: var(--warning);
   font-size: 12px;
   line-height: 1.35;

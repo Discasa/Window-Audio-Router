@@ -1,7 +1,6 @@
 const LOG_PREFIX = "[Window Audio Router]";
 
 const elements = {
-  windowLabel: document.getElementById("windowLabel"),
   audioOutputSelect: document.getElementById("audioOutputSelect"),
   volumeRange: document.getElementById("volumeRange"),
   volumeValue: document.getElementById("volumeValue"),
@@ -469,7 +468,6 @@ async function init() {
 
     const windowInfo = await getCurrentWindow();
     currentWindowId = windowInfo.id;
-    elements.windowLabel.textContent = t("windowLabel", [String(currentWindowId)]);
 
     await loadSavedSettings();
     await refreshDevices(savedSettings.sinkId);
