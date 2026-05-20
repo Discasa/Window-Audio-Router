@@ -21,25 +21,25 @@
 
 html {
   margin: 0;
-  background: transparent;
+  background: var(--bg);
 }
 
 body {
   width: 340px;
   min-height: 238px;
   margin: 0;
-  overflow: hidden;
-  border-radius: 16px;
-  background: transparent;
+  overflow: visible;
+  border-radius: 0;
+  background: var(--bg);
   color: var(--text);
 }
 
 .app {
   min-height: 238px;
   padding: 18px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 16px;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
   background: var(--bg);
 }
 
